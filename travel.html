@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelDream</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/lucide-icons@0.1.1/dist/lucide.min.css" rel="stylesheet">
+  <style>
+    /* Add any custom CSS or overrides here */
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-purple-500 to-teal-500">
+  <div class="w-full min-h-screen">
+    <!-- Navigation -->
+    <nav class="w-full px-6 py-4 flex justify-between items-center">
+      <div class="text-white text-2xl font-semibold">TravelDream</div>
+      <div class="hidden md:flex space-x-6 text-white">
+        <a href="#" class="hover:opacity-80">Destinations</a>
+        <a href="#" class="hover:opacity-80">Planner</a>
+        <a href="#" class="hover:opacity-80">Guides</a>
+        <a href="#" class="hover:opacity-80">About</a>
+      </div>
+      <button class="md:hidden text-white">
+        <i class="lucide lucide-menu" style="font-size: 24px;"></i>
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+      <div class="text-center text-white mb-12">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Discover Your Next Adventure</h1>
+        <p class="text-xl opacity-90">Plan your dream journey with our virtual travel planner</p>
+      </div>
+
+      <!-- Search and Explore -->
+      <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 max-w-2xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-4">
+          <div class="flex-1 relative">
+            <i class="lucide lucide-search absolute left-3 top-3 text-white/60" style="font-size: 20px;"></i>
+            <input type="text" placeholder="Where to?" class="w-full bg-white/20 rounded-lg py-2 px-10 text-white placeholder-white/60 outline-none" />
+          </div>
+          <button class="bg-white text-blue-600 px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white text-center">
+          <i class="lucide lucide-plane mx-auto mb-4" style="font-size: 32px;"></i>
+          <h3 class="text-xl font-semibold mb-2">Flight Planning</h3>
+          <p class="opacity-80">Find the best routes and deals for your journey</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white text-center">
+          <i class="lucide lucide-map-pin mx-auto mb-4" style="font-size: 32px;"></i>
+          <h3 class="text-xl font-semibold mb-2">Destination Guide</h3>
+          <p class="opacity-80">Explore detailed information about locations</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-white text-center">
+          <i class="lucide lucide-calendar mx-auto mb-4" style="font-size: 32px;"></i>
+          <h3 class="text-xl font-semibold mb-2">Itinerary Builder</h3>
+          <p class="opacity-80">Create and manage your travel schedule</p>
+        </div>
+      </div>
+
+      <!-- Travel Destinations Gallery -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="group relative overflow-hidden rounded-xl aspect-video">
+          <img src="https://images.unsplash.com/photo-1570077188670-6a96cf95c142?auto=format&fit=crop&w=800&q=80" alt="Santorini, Greece" class="w-full h-full object-cover transition-transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-semibold">Santorini, Greece</h3>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-video">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali, Indonesia" class="w-full h-full object-cover transition-transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-semibold">Bali, Indonesia</h3>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-xl aspect-video">
+          <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=800&q=80" alt="Machu Picchu, Peru" class="w-full h-full object-cover transition-transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h3 class="text-xl font-semibold">Machu Picchu, Peru</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
